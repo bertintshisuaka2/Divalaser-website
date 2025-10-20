@@ -16,6 +16,7 @@ export default function Home() {
             <a href="#home" className="hover:text-primary transition-colors">Home</a>
             <a href="#services" className="hover:text-primary transition-colors">Services</a>
             <a href="#about" className="hover:text-primary transition-colors">About</a>
+            <a href="/elearning" className="hover:text-primary transition-colors">E-Learning</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
           </nav>
           <Button variant="default" className="hidden md:inline-flex" onClick={() => window.location.href = '#contact'}>Get Started</Button>
