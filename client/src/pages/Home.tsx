@@ -10,7 +10,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Code2 className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold">DIVALASER BIBLICKYGGER</span>
+            <span className="text-xl font-bold">Divalaser Software Solutions</span>
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#home" className="hover:text-primary transition-colors">Home</a>
@@ -22,40 +22,29 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section id="home" className="relative overflow-hidden py-20 md:py-32">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                Empowering Africa Through
-                <span className="text-primary block">Digital Innovation</span>
-              </h1>
-              <p className="text-lg text-muted-foreground">
-                Based in Atlanta, USA, we specialize in digitalization solutions for Africa, 
-                with a focus on the Democratic Republic of Congo. Our expert software engineers 
-                are transforming businesses and communities through cutting-edge technology.
-              </p>
-              <div className="flex gap-4">
-                <Button size="lg" className="gap-2" onClick={() => window.location.href = '#contact'}>
-                  <Rocket className="h-5 w-5" />
-                  Start Your Project
-                </Button>
-                <Button size="lg" variant="outline" onClick={() => window.location.href = '#about'}>Learn More</Button>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="aspect-square rounded-2xl overflow-hidden border border-border shadow-2xl">
-                <img 
-                  src="/hero-coding.jpg" 
-                  alt="Software engineer coding" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
-              <div className="absolute -top-6 -right-6 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl"></div>
-            </div>
+      {/* Hero Section with Full Width Image */}
+      <section id="home" className="relative overflow-hidden w-full h-screen flex items-center justify-center">
+        <div className="absolute inset-0 w-full h-full">
+          <img 
+            src="/team-coding-hero.jpg" 
+            alt="Team coding together" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">
+            Divalaser Software Solutions
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-200 mb-8 drop-shadow-md max-w-3xl mx-auto">
+            Empowering Africa Through Digital Innovation
+          </p>
+          <div className="flex gap-4 justify-center flex-wrap">
+            <Button size="lg" className="gap-2" onClick={() => window.location.href = '#contact'}>
+              <Rocket className="h-5 w-5" />
+              Start Your Project
+            </Button>
+            <Button size="lg" variant="outline" onClick={() => window.location.href = '#about'}>Learn More</Button>
           </div>
         </div>
       </section>
@@ -146,8 +135,10 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="space-y-6 order-1 md:order-2">              <h2 className="text-3xl md:text-4xl font-bold mb-4">About DIVALASER BIBLICKYGGER</h2>           <p className="text-muted-foreground leading-relaxed">
-                DIVALASER BIBLICKYGGER is a forward-thinking technology company headquartered 
+            <div className="space-y-6 order-1 md:order-2">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">About Divalaser Software Solutions</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Divalaser Software Solutions is a forward-thinking technology company headquartered 
                 in Atlanta, USA, with a mission to drive digital transformation across Africa. 
                 We specialize in creating innovative software solutions that address the unique 
                 challenges and opportunities in African markets, particularly in the Democratic 
@@ -200,7 +191,7 @@ export default function Home() {
                     </div>
                     <p className="text-muted-foreground leading-relaxed">
                       With extensive experience in software engineering and full-stack web development, 
-                      Bertin Tshisuaka founded DIVALASER BIBLICKYGGER to bridge the digital divide and 
+                      Bertin Tshisuaka founded Divalaser Software Solutions to bridge the digital divide and 
                       empower African businesses through innovative technology solutions.
                     </p>
                     <div className="space-y-2">
@@ -318,10 +309,10 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2">
               <Code2 className="h-6 w-6 text-primary" />
-              <span className="font-semibold">DIVALASER BIBLICKYGGER</span>
+              <span className="font-semibold">Divalaser Software Solutions</span>
             </div>
             <div className="text-sm text-muted-foreground">
-              © 2025 DIVALASER BIBLICKYGGER. Empowering Africa through technology.
+              © 2025 Divalaser Software Solutions. Empowering Africa through technology.
             </div>
           </div>
         </div>
