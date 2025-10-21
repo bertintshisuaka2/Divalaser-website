@@ -62,8 +62,8 @@ export default function Home() {
             />
           </div>
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">Our Services</h2>
+            <p className="text-yellow-400 max-w-2xl mx-auto">
               We provide comprehensive digital solutions tailored to the unique needs of African markets
             </p>
           </div>
@@ -81,13 +81,13 @@ export default function Home() {
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <Code2 className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>Custom Software Development</CardTitle>
-                <CardDescription>
+                  <CardTitle className="text-yellow-400">Custom Software Development</CardTitle>
+                <CardDescription className="text-yellow-400">
                   Tailored software solutions designed to meet your specific business requirements
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-sm text-yellow-400">
                   <li>• Web & Mobile Applications</li>
                   <li>• Enterprise Software</li>
                   <li>• API Development & Integration</li>
@@ -110,13 +110,13 @@ export default function Home() {
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <Globe className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>Digital Transformation</CardTitle>
-                <CardDescription>
+                  <CardTitle className="text-yellow-400">Digital Transformation</CardTitle>
+                <CardDescription className="text-yellow-400">
                   Modernize your operations with cutting-edge digital technologies
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-sm text-yellow-400">
                   <li>• Business Process Automation</li>
                   <li>• Digital Strategy Consulting</li>
                   <li>• Legacy System Modernization</li>
@@ -139,13 +139,13 @@ export default function Home() {
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <Users className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle>Training & Support</CardTitle>
-                <CardDescription>
+                  <CardTitle className="text-yellow-400">Training & Support</CardTitle>
+                <CardDescription className="text-yellow-400">
                   Empower your team with the skills needed for digital success
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-sm text-yellow-400">
                   <li>• Technical Training Programs</li>
                   <li>• Ongoing Technical Support</li>
                   <li>• Knowledge Transfer</li>
