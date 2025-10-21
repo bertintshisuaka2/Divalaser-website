@@ -53,6 +53,14 @@ export default function Home() {
       {/* Services Section */}
       <section id="services" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
+          {/* Professional Team Photo */}
+          <div className="mb-16 rounded-2xl overflow-hidden border border-border shadow-2xl">
+            <img 
+              src="/services-team.jpg" 
+              alt="Professional software development team" 
+              className="w-full h-auto object-cover"
+            />
+          </div>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
