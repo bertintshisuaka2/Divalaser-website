@@ -68,12 +68,20 @@ export default function Home() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-border hover:border-primary transition-all duration-300 hover:shadow-lg">
-              <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <Code2 className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle>Custom Software Development</CardTitle>
+            <div className="flex flex-col">
+              <div className="mb-4 rounded-2xl overflow-hidden border border-border shadow-xl h-64">
+                <img 
+                  src="/custom-software-dev.png" 
+                  alt="Custom Software Development Team" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <Card className="border-border hover:border-primary transition-all duration-300 hover:shadow-lg flex-1">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Code2 className="h-6 w-6 text-primary" />
+                  </div>
+                  <CardTitle>Custom Software Development</CardTitle>
                 <CardDescription>
                   Tailored software solutions designed to meet your specific business requirements
                 </CardDescription>
@@ -87,13 +95,18 @@ export default function Home() {
                 </ul>
               </CardContent>
             </Card>
+            </div>
 
-            <Card className="border-border hover:border-primary transition-all duration-300 hover:shadow-lg">
-              <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <Globe className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle>Digital Transformation</CardTitle>
+            <div className="flex flex-col">
+              <div className="mb-4 rounded-2xl overflow-hidden border border-border shadow-xl h-64 bg-muted flex items-center justify-center">
+                <p className="text-muted-foreground text-center">Image Space for Digital Transformation</p>
+              </div>
+              <Card className="border-border hover:border-primary transition-all duration-300 hover:shadow-lg flex-1">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Globe className="h-6 w-6 text-primary" />
+                  </div>
+                  <CardTitle>Digital Transformation</CardTitle>
                 <CardDescription>
                   Modernize your operations with cutting-edge digital technologies
                 </CardDescription>
@@ -107,13 +120,18 @@ export default function Home() {
                 </ul>
               </CardContent>
             </Card>
+            </div>
 
-            <Card className="border-border hover:border-primary transition-all duration-300 hover:shadow-lg">
-              <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <Users className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle>Training & Support</CardTitle>
+            <div className="flex flex-col">
+              <div className="mb-4 rounded-2xl overflow-hidden border border-border shadow-xl h-64 bg-muted flex items-center justify-center">
+                <p className="text-muted-foreground text-center">Image Space for Training & Support</p>
+              </div>
+              <Card className="border-border hover:border-primary transition-all duration-300 hover:shadow-lg flex-1">
+                <CardHeader>
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Users className="h-6 w-6 text-primary" />
+                  </div>
+                  <CardTitle>Training & Support</CardTitle>
                 <CardDescription>
                   Empower your team with the skills needed for digital success
                 </CardDescription>
@@ -127,6 +145,7 @@ export default function Home() {
                 </ul>
               </CardContent>
             </Card>
+            </div>
           </div>
         </div>
       </section>
