@@ -138,8 +138,8 @@ export default function Home() {
             <div className="relative order-2 md:order-1">
               <div className="aspect-video rounded-2xl overflow-hidden border border-border shadow-xl">
                 <img 
-                  src="/africa-tech.jpg" 
-                  alt="Africa technology transformation" 
+                  src="/silicon-valley-atlanta-drc-map.png" 
+                  alt="Technology flow from Silicon Valley to Atlanta to Democratic Republic of Congo" 
                   className="w-full h-full object-cover"
                 />
               </div>
