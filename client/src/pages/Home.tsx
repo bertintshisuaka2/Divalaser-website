@@ -10,14 +10,14 @@ export default function Home() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Code2 className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold">Divalaser Software Solutions</span>
+            <span className="text-xl font-bold text-yellow-400">Divalaser Software Solutions</span>
           </div>
           <nav className="hidden md:flex gap-6">
-            <a href="#home" className="hover:text-primary transition-colors">Home</a>
-            <a href="#services" className="hover:text-primary transition-colors">Services</a>
-            <a href="#about" className="hover:text-primary transition-colors">About</a>
-            <a href="/elearning" className="hover:text-primary transition-colors">E-Learning</a>
-            <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
+            <a href="#home" className="text-yellow-400 hover:text-primary transition-colors">Home</a>
+            <a href="#services" className="text-yellow-400 hover:text-primary transition-colors">Services</a>
+            <a href="#about" className="text-yellow-400 hover:text-primary transition-colors">About</a>
+            <a href="/elearning" className="text-yellow-400 hover:text-primary transition-colors">E-Learning</a>
+            <a href="#contact" className="text-yellow-400 hover:text-primary transition-colors">Contact</a>
           </nav>
           <Button variant="default" className="hidden md:inline-flex" onClick={() => window.location.href = '#contact'}>Get Started</Button>
         </div>
@@ -33,19 +33,19 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg text-yellow-400">
             Divalaser Software Solutions
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 drop-shadow-md max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-yellow-400 mb-8 drop-shadow-md max-w-3xl mx-auto">
             Empowering Africa Through Digital Innovation
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Button size="lg" className="gap-2" onClick={() => window.location.href = '#contact'}>
+            <Button size="lg" className="gap-2 text-yellow-400" onClick={() => window.location.href = '#contact'}>
               <Rocket className="h-5 w-5" />
               Start Your Project
             </Button>
-            <Button size="lg" variant="outline" onClick={() => window.location.href = '#about'}>Learn More</Button>
+            <Button size="lg" variant="outline" className="text-yellow-400" onClick={() => window.location.href = '#about'}>Learn More</Button>
           </div>
         </div>
       </section>
@@ -172,21 +172,21 @@ export default function Home() {
               </div>
             </div>
             <div className="space-y-6 order-1 md:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">About Divalaser Software Solutions</h2>
-              <p className="text-muted-foreground leading-relaxed">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">About Divalaser Software Solutions</h2>
+              <p className="text-yellow-400 leading-relaxed">
                 Divalaser Software Solutions is a forward-thinking technology company headquartered 
                 in Atlanta, USA, with a mission to drive digital transformation across Africa. 
                 We specialize in creating innovative software solutions that address the unique 
                 challenges and opportunities in African markets, particularly in the Democratic 
                 Republic of Congo.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-yellow-400 leading-relaxed">
                 Our team of experienced software engineers combines international expertise with 
                 deep understanding of local contexts to deliver solutions that truly make a difference. 
                 We believe in the power of technology to unlock economic growth, improve governance, 
                 and enhance the quality of life for millions across the continent.
               </p>
-              <div className="flex items-center gap-2 text-muted-foreground">
+              <div className="flex items-center gap-2 text-yellow-400">
                 <MapPin className="h-5 w-5 text-primary" />
                 <span>Atlanta, Georgia, USA</span>
               </div>
@@ -200,8 +200,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Founder</h2>
-              <p className="text-muted-foreground">Leadership driving innovation across Africa</p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">Meet Our Founder</h2>
+              <p className="text-yellow-400">Leadership driving innovation across Africa</p>
             </div>
             <Card className="border-border">
               <CardContent className="p-8">
@@ -221,11 +221,11 @@ export default function Home() {
                   </div>
                   <div className="md:col-span-2 space-y-4">
                     <div>
-                      <h3 className="text-2xl font-bold mb-2">BERTIN TSHISUAKA</h3>
-                      <p className="text-primary font-semibold mb-1">Software Engineer</p>
-                      <p className="text-muted-foreground">Full Stack Web Developer</p>
+                      <h3 className="text-2xl font-bold mb-2 text-yellow-400">BERTIN TSHISUAKA</h3>
+                      <p className="text-yellow-400 font-semibold mb-1">Software Engineer</p>
+                      <p className="text-yellow-400">Full Stack Web Developer</p>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-yellow-400 leading-relaxed">
                       With extensive experience in software engineering and full-stack web development, 
                       Bertin Tshisuaka founded Divalaser Software Solutions to bridge the digital divide and 
                       empower African businesses through innovative technology solutions.
@@ -233,13 +233,13 @@ export default function Home() {
                     <div className="space-y-2">
                       <div className="flex items-center gap-3">
                         <Mail className="h-5 w-5 text-primary" />
-                        <a href="mailto:bertintshisuaka@hotmail.com" className="hover:text-primary transition-colors">
+                        <a href="mailto:bertintshisuaka@hotmail.com" className="text-yellow-400 hover:text-primary transition-colors">
                           bertintshisuaka@hotmail.com
                         </a>
                       </div>
                       <div className="flex items-center gap-3">
                         <Phone className="h-5 w-5 text-primary" />
-                        <a href="tel:+16789796811" className="hover:text-primary transition-colors">
+                        <a href="tel:+16789796811" className="text-yellow-400 hover:text-primary transition-colors">
                           +1 (678) 979-6811
                         </a>
                       </div>
@@ -256,8 +256,8 @@ export default function Home() {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Built with Excellence</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">Built with Excellence</h2>
+            <p className="text-yellow-400 max-w-2xl mx-auto">
               Our software engineers craft clean, efficient, and scalable code
             </p>
           </div>
@@ -269,7 +269,7 @@ export default function Home() {
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
-                <span className="text-sm text-muted-foreground ml-4">app.tsx</span>
+                <span className="text-sm text-yellow-400 ml-4">app.tsx</span>
               </div>
               <div className="relative">
                 <img 
@@ -282,16 +282,16 @@ export default function Home() {
             </div>
             <div className="mt-8 grid grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <div className="text-sm text-muted-foreground">Projects Delivered</div>
+                <div className="text-3xl font-bold text-yellow-400 mb-2">50+</div>
+                <div className="text-sm text-yellow-400">Projects Delivered</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">15+</div>
-                <div className="text-sm text-muted-foreground">Expert Engineers</div>
+                <div className="text-3xl font-bold text-yellow-400 mb-2">15+</div>
+                <div className="text-sm text-yellow-400">Expert Engineers</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">99%</div>
-                <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+                <div className="text-3xl font-bold text-yellow-400 mb-2">99%</div>
+                <div className="text-sm text-yellow-400">Client Satisfaction</div>
               </div>
             </div>
           </div>
@@ -302,8 +302,8 @@ export default function Home() {
       <section id="contact" className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Let's Build Together</h2>
-            <p className="text-muted-foreground mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">Let's Build Together</h2>
+            <p className="text-yellow-400 mb-8">
               Ready to transform your business with digital solutions? Get in touch with our team today.
             </p>
             <div className="space-y-4">
@@ -315,8 +315,8 @@ export default function Home() {
                         <Mail className="h-5 w-5 text-primary" />
                       </div>
                       <div className="text-left">
-                        <div className="text-sm text-muted-foreground">Email</div>
-                        <div className="font-medium">bertintshisuaka@hotmail.com</div>
+                        <div className="text-sm text-yellow-400">Email</div>
+                        <div className="font-medium text-yellow-400">bertintshisuaka@hotmail.com</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -324,8 +324,8 @@ export default function Home() {
                         <Phone className="h-5 w-5 text-primary" />
                       </div>
                       <div className="text-left">
-                        <div className="text-sm text-muted-foreground">Phone</div>
-                        <div className="font-medium">+1 (678) 979-6811</div>
+                        <div className="text-sm text-yellow-400">Phone</div>
+                        <div className="font-medium text-yellow-400">+1 (678) 979-6811</div>
                       </div>
                     </div>
                   </div>
@@ -345,7 +345,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2">
               <Code2 className="h-6 w-6 text-primary" />
-              <span className="font-semibold">Divalaser Software Solutions</span>
+              <span className="font-semibold text-yellow-400">Divalaser Software Solutions</span>
             </div>
             <div className="text-sm text-muted-foreground">
               © 2025 Divalaser Software Solutions. Empowering Africa through technology.
