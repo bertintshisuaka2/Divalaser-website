@@ -98,8 +98,12 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col">
-              <div className="mb-4 rounded-2xl overflow-hidden border border-border shadow-xl h-64 bg-muted flex items-center justify-center">
-                <p className="text-muted-foreground text-center">Image Space for Digital Transformation</p>
+              <div className="mb-4 rounded-2xl overflow-hidden border border-border shadow-xl h-64">
+                <img 
+                  src="/digital-transformation.png" 
+                  alt="Digital Transformation" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <Card className="border-border hover:border-primary transition-all duration-300 hover:shadow-lg flex-1">
                 <CardHeader>
