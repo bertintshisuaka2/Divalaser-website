@@ -252,9 +252,16 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex-1 rounded-2xl overflow-hidden border border-border shadow-xl">
-                <div className="w-full h-64 bg-muted/50 flex items-center justify-center">
-                  <p className="text-muted-foreground text-center">Photo Space 1</p>
-                </div>
+                <iframe
+                  width="100%"
+                  height="256"
+                  src="https://www.youtube.com/embed/2ZJGxoF610c?start=0&end=60"
+                  title="World Bank - Africa's Digital Transformation"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-64"
+                ></iframe>
               </div>
             </div>
 
@@ -267,9 +274,16 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex-1 rounded-2xl overflow-hidden border border-border shadow-xl">
-                <div className="w-full h-64 bg-muted/50 flex items-center justify-center">
-                  <p className="text-muted-foreground text-center">Photo Space 2</p>
-                </div>
+                <iframe
+                  width="100%"
+                  height="256"
+                  src="https://www.youtube.com/embed/fh9XouWEAKI?start=0&end=60"
+                  title="President Tshisekedi - UN General Assembly Address"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-64"
+                ></iframe>
               </div>
             </div>
           </div>
