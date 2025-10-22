@@ -81,6 +81,15 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Custom Software Development Image */}
+            <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-12">
+              <img 
+                src="/custom-software-dev.png" 
+                alt="Custom Software Development" 
+                className="w-full h-80 object-cover"
+              />
+            </div>
+
             {/* Service Cards */}
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-muted/50 p-6 rounded-lg border border-border">
