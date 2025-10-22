@@ -10,13 +10,13 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <img src={APP_LOGO} alt={APP_TITLE} className="h-8 w-8" />
-            <span className="text-xl font-bold text-yellow-400">{APP_TITLE}</span>
+      <header className="sticky top-0 z-50 bg-background/80 backdrop-blur border-b border-border">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <span className="text-2xl font-bold text-blue-500">{"</>"}</span>
+            <h1 className="text-2xl font-bold text-yellow-400">{APP_TITLE}</h1>
           </div>
           <nav className="hidden md:flex gap-8">
             <button onClick={() => scrollToSection("services")} className="text-yellow-400 hover:text-yellow-300 transition">Services</button>
@@ -30,14 +30,16 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
-          <div 
-            className="absolute inset-0 bg-cover bg-center brightness-110"
-            style={{backgroundImage: "url('/team-coding-hero.jpg')"}}
-          />
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-            <h1 className="text-5xl md:text-6xl font-bold text-yellow-400 mb-4">Divalaser Software Solutions</h1>
-            <p className="text-xl md:text-2xl text-yellow-400 mb-8">Empowering Africa Through Digital Innovation</p>
+          <div className="absolute inset-0">
+            <img 
+              src="/team-coding-hero.jpg" 
+              alt="Team coding" 
+              className="w-full h-full object-cover brightness-75"
+            />
+          </div>
+          <div className="relative z-10 text-center text-white">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 text-yellow-400">Divalaser Software Solutions</h1>
+            <p className="text-xl md:text-2xl mb-8 text-yellow-400">Empowering Africa Through Digital Innovation</p>
             <Button 
               size="lg"
               onClick={() => scrollToSection("services")}
@@ -51,65 +53,71 @@ export default function Home() {
         {/* Services Section */}
         <section id="services" className="py-20 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center text-yellow-400 mb-12">Our Services</h2>
+            <h2 className="text-4xl font-bold text-center text-yellow-400 mb-16">Our Services</h2>
 
-            {/* Custom Software Development Section */}
-            <div className="mb-20">
-              <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-6">
-                <img 
-                  src="/custom-software-dev.png" 
-                  alt="Custom Software Development" 
-                  className="w-full h-80 object-cover"
-                />
+            {/* Three Column Grid Layout */}
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Custom Software Development Card */}
+              <div className="flex flex-col h-full">
+                <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-6 flex-shrink-0">
+                  <img 
+                    src="/custom-software-dev.png" 
+                    alt="Custom Software Development" 
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
+                <div className="bg-muted/50 p-8 rounded-lg border border-border flex-grow flex flex-col">
+                  <h3 className="text-2xl font-bold text-yellow-400 mb-4">Custom Software Development</h3>
+                  <p className="text-yellow-400 mb-4 text-sm leading-relaxed">Tailored software solutions designed to meet your specific business requirements</p>
+                  <ul className="space-y-3 text-yellow-400 text-sm flex-grow">
+                    <li>• Bespoke application development</li>
+                    <li>• Legacy system modernization</li>
+                    <li>• API integration & development</li>
+                    <li>• Quality assurance & testing</li>
+                  </ul>
+                </div>
               </div>
-              <div className="bg-muted/50 p-8 rounded-lg border border-border">
-                <h3 className="text-2xl font-bold text-yellow-400 mb-4">Custom Software Development</h3>
-                <ul className="space-y-3 text-yellow-400">
-                  <li>• Bespoke application development tailored to your business needs</li>
-                  <li>• Legacy system modernization and optimization</li>
-                  <li>• API integration and development for seamless connectivity</li>
-                  <li>• Quality assurance and comprehensive testing</li>
-                </ul>
-              </div>
-            </div>
 
-            {/* Digital Transformation Section */}
-            <div className="mb-20">
-              <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-6">
-                <img 
-                  src="/digital-transformation.png" 
-                  alt="Digital Transformation" 
-                  className="w-full h-80 object-cover"
-                />
+              {/* Digital Transformation Card */}
+              <div className="flex flex-col h-full">
+                <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-6 flex-shrink-0">
+                  <img 
+                    src="/digital-transformation.png" 
+                    alt="Digital Transformation" 
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
+                <div className="bg-muted/50 p-8 rounded-lg border border-border flex-grow flex flex-col">
+                  <h3 className="text-2xl font-bold text-yellow-400 mb-4">Digital Transformation</h3>
+                  <p className="text-yellow-400 mb-4 text-sm leading-relaxed">Modernize your operations with cutting-edge digital solutions</p>
+                  <ul className="space-y-3 text-yellow-400 text-sm flex-grow">
+                    <li>• Business process optimization</li>
+                    <li>• Cloud migration strategies</li>
+                    <li>• Digital infrastructure setup</li>
+                    <li>• Change management consulting</li>
+                  </ul>
+                </div>
               </div>
-              <div className="bg-muted/50 p-8 rounded-lg border border-border">
-                <h3 className="text-2xl font-bold text-yellow-400 mb-4">Digital Transformation</h3>
-                <ul className="space-y-3 text-yellow-400">
-                  <li>• Business process optimization and automation</li>
-                  <li>• Cloud migration strategies and implementation</li>
-                  <li>• Digital infrastructure setup and management</li>
-                  <li>• Change management consulting and support</li>
-                </ul>
-              </div>
-            </div>
 
-            {/* Training & Support Section */}
-            <div className="mb-20">
-              <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-6">
-                <img 
-                  src="/training-support.png" 
-                  alt="Training and Support" 
-                  className="w-full h-80 object-cover"
-                />
-              </div>
-              <div className="bg-muted/50 p-8 rounded-lg border border-border">
-                <h3 className="text-2xl font-bold text-yellow-400 mb-4">Training & Support</h3>
-                <ul className="space-y-3 text-yellow-400">
-                  <li>• Technical staff training programs and workshops</li>
-                  <li>• 24/7 technical support and maintenance</li>
-                  <li>• Knowledge transfer and documentation</li>
-                  <li>• Ongoing maintenance and optimization services</li>
-                </ul>
+              {/* Training & Support Card */}
+              <div className="flex flex-col h-full">
+                <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-6 flex-shrink-0">
+                  <img 
+                    src="/training-support.png" 
+                    alt="Training and Support" 
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
+                <div className="bg-muted/50 p-8 rounded-lg border border-border flex-grow flex flex-col">
+                  <h3 className="text-2xl font-bold text-yellow-400 mb-4">Training & Support</h3>
+                  <p className="text-yellow-400 mb-4 text-sm leading-relaxed">Empower your team with the skills needed for digital success</p>
+                  <ul className="space-y-3 text-yellow-400 text-sm flex-grow">
+                    <li>• Technical training programs</li>
+                    <li>• 24/7 technical support</li>
+                    <li>• Knowledge transfer</li>
+                    <li>• Ongoing maintenance</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -199,8 +207,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
 
         {/* Two Column Section with Text and Videos */}
         <section className="py-20">
@@ -320,14 +328,6 @@ export default function Home() {
                 <p className="text-yellow-400">Client Satisfaction</p>
               </div>
             </div>
-
-            <div className="rounded-2xl overflow-hidden border border-border shadow-xl">
-              <img 
-                src="/code-showcase.jpg" 
-                alt="Code showcase" 
-                className="w-full h-96 object-cover"
-              />
-            </div>
           </div>
         </section>
 
@@ -335,38 +335,41 @@ export default function Home() {
         <section id="contact" className="py-20 bg-muted/30">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold text-yellow-400 mb-6">Let's Build Together</h2>
-            <p className="text-yellow-400 mb-8 max-w-2xl mx-auto">
-              Ready to transform your business with cutting-edge technology? Contact us today to discuss your project and discover how we can help you succeed in the digital economy.
+            <p className="text-yellow-400 text-lg mb-8 max-w-2xl mx-auto">
+              Ready to transform your business with innovative technology solutions? Contact us today to discuss your project and discover how Divalaser can help you succeed.
             </p>
             <Button 
               size="lg"
-              onClick={() => window.location.href = "mailto:bertintshisuaka@hotmail.com"}
               className="bg-blue-600 hover:bg-blue-700 text-white"
             >
-              Get In Touch
+              Get Started
             </Button>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-background border-t border-border py-8">
+      <footer className="bg-muted/50 border-t border-border py-8">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h4 className="font-bold text-yellow-400 mb-4">Divalaser Software Solutions</h4>
-              <p className="text-yellow-400 text-sm">Empowering Africa through digital innovation</p>
-            </div>
-            <div>
-              <h4 className="font-bold text-yellow-400 mb-4">Services</h4>
+              <h4 className="text-yellow-400 font-bold mb-4">Company</h4>
               <ul className="space-y-2 text-yellow-400 text-sm">
-                <li>Custom Software Development</li>
-                <li>Digital Transformation</li>
-                <li>Training & Support</li>
+                <li><a href="#about" className="hover:text-yellow-300">About Us</a></li>
+                <li><a href="#services" className="hover:text-yellow-300">Services</a></li>
+                <li><a href="#founder" className="hover:text-yellow-300">Team</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-yellow-400 mb-4">Contact</h4>
+              <h4 className="text-yellow-400 font-bold mb-4">Services</h4>
+              <ul className="space-y-2 text-yellow-400 text-sm">
+                <li><a href="#services" className="hover:text-yellow-300">Custom Development</a></li>
+                <li><a href="#services" className="hover:text-yellow-300">Digital Transformation</a></li>
+                <li><a href="#services" className="hover:text-yellow-300">Training & Support</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-yellow-400 font-bold mb-4">Contact</h4>
               <ul className="space-y-2 text-yellow-400 text-sm">
                 <li>Email: bertintshisuaka@hotmail.com</li>
                 <li>Phone: +1 (678) 979-6811</li>
@@ -374,16 +377,17 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-yellow-400 mb-4">Focus</h4>
+              <h4 className="text-yellow-400 font-bold mb-4">Focus</h4>
               <ul className="space-y-2 text-yellow-400 text-sm">
-                <li>DRC Digital Nation 2030</li>
-                <li>145 Territories Project</li>
-                <li>African Digital Economy</li>
+                <li>Africa Digitalization</li>
+                <li>DRC Development</li>
+                <li>Tech Innovation</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-border pt-8 text-center text-yellow-400 text-sm">
-            <p>&copy; 2025 Divalaser Software Solutions. All rights reserved. | Transforming Africa Through Technology</p>
+            <p>&copy; 2024 Divalaser Software Solutions. All rights reserved.</p>
+            <p>Empowering Africa Through Digital Innovation</p>
           </div>
         </div>
       </footer>
