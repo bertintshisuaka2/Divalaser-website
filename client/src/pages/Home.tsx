@@ -273,17 +273,16 @@ export default function Home() {
                   President Felix Tshisekedi has unveiled the DRC Digital Nation 2030 initiative, a bold vision to transform the Democratic Republic of Congo into Africa's leading tech hub. The President declared: If we are gathered today, it is to affirm a clear and measured ambition: to make the Democratic Republic of Congo a prosperous digital nation and a technological hub at the heart of Africa by 2030. Digital transformation has been central to his development policy since 2019, with strategic pillars including infrastructure expansion across Congo's vast territory, digital services for education, health, and finance, and governance frameworks that create a business-friendly ecosystem. By leveraging Congo's wealth in rare and critical minerals essential to global digital and energy transitions, the DRC aims to become a driving force for inclusive and shared digital peace, creating millions of jobs and ensuring shared prosperity for the Congolese people.
                 </p>
               </div>
-              <div className="flex-1 rounded-2xl overflow-hidden border border-border shadow-xl bg-muted/50 p-6 flex items-center">
-                <div className="text-center">
-                  <blockquote className="text-yellow-400 italic text-lg mb-4">
-                    "If we are gathered today, it is to affirm a clear and measured ambition: to make the Democratic Republic of Congo a prosperous digital nation and a technological hub at the heart of Africa by 2030."
-                  </blockquote>
-                  <p className="text-yellow-400 font-semibold">President Felix-Antoine Tshisekedi Tshilombo</p>
-                  <p className="text-yellow-400 text-sm mt-2">DRC Digital Nation 2030 Initiative</p>
-                  <p className="text-yellow-400 text-xs mt-4 leading-relaxed">
-                    The Presidents vision commits $1 billion in public spending (2026-2030) to transform the DRC into Africas leading tech hub, with strategic focus on infrastructure expansion, digital services for education and health, and governance frameworks that foster innovation and inclusive digital economy.
-                  </p>
-                </div>
+              <div className="flex-1 rounded-2xl overflow-hidden border border-border shadow-xl">
+                <video
+                  width="100%"
+                  height="256"
+                  controls
+                  className="w-full h-64 bg-black"
+                >
+                  <source src="/tshisekedi-testimonial-final.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
