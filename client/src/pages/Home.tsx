@@ -239,6 +239,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Two Column Section with Text and Photos */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Left Column */}
+            <div className="flex flex-col">
+              <div className="mb-6 p-6 bg-muted/50 rounded-lg border border-border">
+                <h3 className="text-xl font-bold text-yellow-400 mb-4">Column 1 Title</h3>
+                <p className="text-yellow-400 leading-relaxed">
+                  Add your text content here for the first column. This section highlights key information about your services, expertise, or offerings.
+                </p>
+              </div>
+              <div className="flex-1 rounded-2xl overflow-hidden border border-border shadow-xl">
+                <div className="w-full h-64 bg-muted/50 flex items-center justify-center">
+                  <p className="text-muted-foreground text-center">Photo Space 1</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column */}
+            <div className="flex flex-col">
+              <div className="mb-6 p-6 bg-muted/50 rounded-lg border border-border">
+                <h3 className="text-xl font-bold text-yellow-400 mb-4">Column 2 Title</h3>
+                <p className="text-yellow-400 leading-relaxed">
+                  Add your text content here for the second column. This section can showcase additional features, benefits, or case studies.
+                </p>
+              </div>
+              <div className="flex-1 rounded-2xl overflow-hidden border border-border shadow-xl">
+                <div className="w-full h-64 bg-muted/50 flex items-center justify-center">
+                  <p className="text-muted-foreground text-center">Photo Space 2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Founder Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
