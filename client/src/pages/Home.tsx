@@ -255,7 +255,7 @@ export default function Home() {
                 <iframe
                   width="100%"
                   height="256"
-                  src="https://www.youtube.com/embed/2ZJGxoF610c?start=0&end=60"
+                  src="https://www.youtube.com/embed/KPczf2G0uXg"
                   title="World Bank - Africa's Digital Transformation"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
