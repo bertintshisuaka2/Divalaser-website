@@ -51,18 +51,20 @@ export default function Home() {
         {/* Services Section */}
         <section id="services" className="py-20 bg-background">
           <div className="container mx-auto px-4">
+            {/* Large Professional Team Photo */}
+            <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-12">
+              <img 
+                src="/services-team.jpg" 
+                alt="Professional Services Team" 
+                className="w-full h-96 object-cover"
+              />
+            </div>
+            
             <h2 className="text-4xl font-bold text-center text-yellow-400 mb-4">Our Services</h2>
             <p className="text-center text-yellow-400 mb-12">Comprehensive solutions tailored for African markets</p>
             
             {/* Service Images */}
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="rounded-2xl overflow-hidden border border-border shadow-xl">
-                <img 
-                  src="/services-team.jpg" 
-                  alt="Custom Software Development" 
-                  className="w-full h-64 object-cover"
-                />
-              </div>
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="rounded-2xl overflow-hidden border border-border shadow-xl">
                 <img 
                   src="/digital-transformation.png" 
