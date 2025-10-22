@@ -246,7 +246,7 @@ export default function Home() {
             {/* Left Column */}
             <div className="flex flex-col">
               <div className="mb-6 p-6 bg-muted/50 rounded-lg border border-border">
-                <h3 className="text-xl font-bold text-yellow-400 mb-4">Vision on Digitalization in Africa</h3>
+                <h3 className="text-xl font-bold text-yellow-400 mb-4">Vision of the World Bank sur la digitalisation</h3>
                 <p className="text-yellow-400 leading-relaxed">
                   The World Bank views digitalization as a key driver of inclusive development in Africa. Through its initiative called Inclusive Digitalization in Eastern and Southern Africa (IDEA), it plans to invest approximately USD 2.48 billion to support 15 countries and regional economic communities. The goals include expanding access to high-speed internet, increasing the use of digital services, bridging the infrastructure gap (connectivity, devices), lowering data costs, developing digital skills, and strengthening digital ID platforms. The Bank is also spearheading the Mobilizing Access to the Digital Economy (MADE) Alliance: Africa, aiming to connect 100 million people and businesses by 2034, with a focus on public-private cooperation and regional digital market integration. In essence, the World Bank seeks to promote an African digital economy where every person, business, and government is empowered through technology. This requires not only infrastructure, but also regulatory frameworks, digital public services, and reduced digital divides.
                 </p>
@@ -261,7 +261,7 @@ export default function Home() {
             {/* Right Column */}
             <div className="flex flex-col">
               <div className="mb-6 p-6 bg-muted/50 rounded-lg border border-border">
-                <h3 className="text-xl font-bold text-yellow-400 mb-4">Vision on Digitalization in Africa</h3>
+                <h3 className="text-xl font-bold text-yellow-400 mb-4">The Vision of President Felix Tshisekedi sur la digitalisation</h3>
                 <p className="text-yellow-400 leading-relaxed">
                   President Felix Tshisekedi has unveiled the DRC Digital Nation 2030 initiative, a bold vision to transform the Democratic Republic of Congo into Africa's leading tech hub. The President declared: If we are gathered today, it is to affirm a clear and measured ambition: to make the Democratic Republic of Congo a prosperous digital nation and a technological hub at the heart of Africa by 2030. Digital transformation has been central to his development policy since 2019, with strategic pillars including infrastructure expansion across Congo's vast territory, digital services for education, health, and finance, and governance frameworks that create a business-friendly ecosystem. By leveraging Congo's wealth in rare and critical minerals essential to global digital and energy transitions, the DRC aims to become a driving force for inclusive and shared digital peace, creating millions of jobs and ensuring shared prosperity for the Congolese people.
                 </p>
