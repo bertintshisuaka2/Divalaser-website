@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { APP_LOGO, APP_TITLE } from "@/const";
+import { useState } from "react";
 
 export default function Home() {
+  const [audioLanguage, setAudioLanguage] = useState('english');
+  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -290,8 +293,95 @@ export default function Home() {
                 With extensive experience in software engineering and full-stack web development, Bertin Tshisuaka founded Divalaser Software Solutions to bridge the digital divide and empower African businesses through innovative technology solutions.
               </p>
               
+              {/* Hear from the Founder - Audio Section */}
+              <div className="mt-12 pt-8 border-t border-yellow-400/30">
+                <h4 className="text-2xl font-bold text-yellow-400 mb-4">Hear from the Founder</h4>
+                <p className="text-yellow-400 text-sm mb-6">Listen to Bertin's vision for digitalization in Africa</p>
+                
+                <div className="flex gap-4 mb-6 justify-center flex-wrap">
+                  <button
+                    onClick={() => setAudioLanguage('english')}
+                    className={`px-6 py-2 rounded-lg font-semibold transition ${
+                      audioLanguage === 'english'
+                        ? 'bg-yellow-400 text-black'
+                        : 'border border-yellow-400 text-yellow-400 hover:bg-yellow-400/10'
+                    }`}
+                  >
+                    English
+                  </button>
+                  <button
+                    onClick={() => setAudioLanguage('french')}
+                    className={`px-6 py-2 rounded-lg font-semibold transition ${
+                      audioLanguage === 'french'
+                        ? 'bg-yellow-400 text-black'
+                        : 'border border-yellow-400 text-yellow-400 hover:bg-yellow-400/10'
+                    }`}
+                  >
+                    Francais
+                  </button>
+                  <button
+                    onClick={() => setAudioLanguage('lingala')}
+                    className={`px-6 py-2 rounded-lg font-semibold transition ${
+                      audioLanguage === 'lingala'
+                        ? 'bg-yellow-400 text-black'
+                        : 'border border-yellow-400 text-yellow-400 hover:bg-yellow-400/10'
+                    }`}
+                  >
+                    Lingala
+                  </button>
+                </div>
+
+                {audioLanguage === 'english' && (
+                  <div>
+                    <p className="text-yellow-400 text-sm italic mb-4">Original speech in English</p>
+                    <audio 
+                      controls 
+                      className="w-full rounded-lg"
+                      style={{
+                        accentColor: '#FACC15'
+                      }}
+                    >
+                      <source src="/founder-speech.wav" type="audio/wav" />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                )}
+
+                {audioLanguage === 'french' && (
+                  <div>
+                    <p className="text-yellow-400 text-sm italic mb-4">Discours en francais avec musique de fond</p>
+                    <audio 
+                      controls 
+                      className="w-full rounded-lg"
+                      style={{
+                        accentColor: '#FACC15'
+                      }}
+                    >
+                      <source src="/founder-speech-french-with-music.mp3" type="audio/mpeg" />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                )}
+
+                {audioLanguage === 'lingala' && (
+                  <div>
+                    <p className="text-yellow-400 text-sm italic mb-4">Lingala na Molinga</p>
+                    <audio 
+                      controls 
+                      className="w-full rounded-lg"
+                      style={{
+                        accentColor: '#FACC15'
+                      }}
+                    >
+                      <source src="/founder-speech-lingala.wav" type="audio/wav" />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                )}
+              </div>
+              
               {/* Contact Information */}
-              <div className="space-y-4 text-yellow-400 text-lg border-t border-yellow-400/30 pt-8">
+              <div className="space-y-4 text-yellow-400 text-lg border-t border-yellow-400/30 pt-8 mt-8">
                 <div className="flex items-center justify-center gap-3">
                   <span>✉️</span>
                   <a href="mailto:bertintshisuaka@hotmail.com" className="hover:text-yellow-300 transition">
