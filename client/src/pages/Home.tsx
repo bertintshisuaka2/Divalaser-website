@@ -58,21 +58,21 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="rounded-2xl overflow-hidden border border-border shadow-xl">
                 <img 
-                  src="/team-development.jpg" 
+                  src="/services-team.jpg" 
                   alt="Custom Software Development" 
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden border border-border shadow-xl">
                 <img 
-                  src="/digital-transformation.jpg" 
+                  src="/digital-transformation.png" 
                   alt="Digital Transformation" 
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden border border-border shadow-xl">
                 <img 
-                  src="/training-support.jpg" 
+                  src="/training-support.png" 
                   alt="Training and Support" 
                   className="w-full h-64 object-cover"
                 />
@@ -259,7 +259,7 @@ export default function Home() {
             <div className="max-w-md mx-auto bg-muted/50 p-8 rounded-lg border border-border">
               <div className="mb-6 flex justify-center">
                 <img 
-                  src="/bertin-photo.jpg" 
+                  src="/founder-photo.jpg" 
                   alt="Bertin Tshisuaka" 
                   className="w-40 h-40 rounded-full object-cover border-4 border-yellow-400"
                 />
