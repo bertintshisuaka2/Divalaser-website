@@ -195,6 +195,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Silicon Valley Innovation Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">Silicon Valley Innovation Meets African Ambition</h2>
+              <p className="text-yellow-400 leading-relaxed">
+                Our team combines deep technical expertise from leading tech hubs with intimate knowledge of African markets. We understand both the possibilities of modern technology and the practical realities of implementation across diverse contexts.
+              </p>
+              
+              <div>
+                <h3 className="text-xl font-bold text-yellow-400 mb-4">Technologies</h3>
+                <ul className="space-y-2 text-yellow-400">
+                  <li>• React, Node.js, Python</li>
+                  <li>• Cloud (AWS, Azure, GCP)</li>
+                  <li>• Mobile (iOS, Android)</li>
+                  <li>• AI/ML Integration</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 className="text-xl font-bold text-yellow-400 mb-4">Industries</h3>
+                <ul className="space-y-2 text-yellow-400">
+                  <li>• Financial Services</li>
+                  <li>• Healthcare</li>
+                  <li>• Education</li>
+                  <li>• E-commerce</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="relative order-first md:order-last">
+              <div className="aspect-video rounded-2xl overflow-hidden border border-border shadow-xl">
+                <img 
+                  src="/silicon-valley-workspace.jpg" 
+                  alt="Silicon Valley tech workspace" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Founder Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
