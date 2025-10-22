@@ -51,74 +51,64 @@ export default function Home() {
         {/* Services Section */}
         <section id="services" className="py-20 bg-background">
           <div className="container mx-auto px-4">
-            {/* Large Professional Team Photo */}
-            <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-12">
-              <img 
-                src="/services-team.jpg" 
-                alt="Professional Services Team" 
-                className="w-full h-96 object-cover"
-              />
+            <h2 className="text-4xl font-bold text-center text-yellow-400 mb-12">Our Services</h2>
+
+            {/* Custom Software Development Section */}
+            <div className="mb-20">
+              <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-6">
+                <img 
+                  src="/custom-software-dev.png" 
+                  alt="Custom Software Development" 
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+              <div className="bg-muted/50 p-8 rounded-lg border border-border">
+                <h3 className="text-2xl font-bold text-yellow-400 mb-4">Custom Software Development</h3>
+                <ul className="space-y-3 text-yellow-400">
+                  <li>• Bespoke application development tailored to your business needs</li>
+                  <li>• Legacy system modernization and optimization</li>
+                  <li>• API integration and development for seamless connectivity</li>
+                  <li>• Quality assurance and comprehensive testing</li>
+                </ul>
+              </div>
             </div>
-            
-            <h2 className="text-4xl font-bold text-center text-yellow-400 mb-4">Our Services</h2>
-            <p className="text-center text-yellow-400 mb-12">Comprehensive solutions tailored for African markets</p>
-            
-            {/* Service Images */}
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="rounded-2xl overflow-hidden border border-border shadow-xl">
+
+            {/* Digital Transformation Section */}
+            <div className="mb-20">
+              <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-6">
                 <img 
                   src="/digital-transformation.png" 
                   alt="Digital Transformation" 
-                  className="w-full h-64 object-cover"
+                  className="w-full h-80 object-cover"
                 />
               </div>
-              <div className="rounded-2xl overflow-hidden border border-border shadow-xl">
+              <div className="bg-muted/50 p-8 rounded-lg border border-border">
+                <h3 className="text-2xl font-bold text-yellow-400 mb-4">Digital Transformation</h3>
+                <ul className="space-y-3 text-yellow-400">
+                  <li>• Business process optimization and automation</li>
+                  <li>• Cloud migration strategies and implementation</li>
+                  <li>• Digital infrastructure setup and management</li>
+                  <li>• Change management consulting and support</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Training & Support Section */}
+            <div className="mb-20">
+              <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-6">
                 <img 
                   src="/training-support.png" 
                   alt="Training and Support" 
-                  className="w-full h-64 object-cover"
+                  className="w-full h-80 object-cover"
                 />
               </div>
-            </div>
-
-            {/* Custom Software Development Image */}
-            <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-12">
-              <img 
-                src="/custom-software-dev.png" 
-                alt="Custom Software Development" 
-                className="w-full h-80 object-cover"
-              />
-            </div>
-
-            {/* Service Cards */}
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-muted/50 p-6 rounded-lg border border-border">
-                <h3 className="text-xl font-bold text-yellow-400 mb-3">Custom Software Development</h3>
-                <ul className="space-y-2 text-yellow-400 text-sm">
-                  <li>• Bespoke application development</li>
-                  <li>• Legacy system modernization</li>
-                  <li>• API integration and development</li>
-                  <li>• Quality assurance and testing</li>
-                </ul>
-              </div>
-
-              <div className="bg-muted/50 p-6 rounded-lg border border-border">
-                <h3 className="text-xl font-bold text-yellow-400 mb-3">Digital Transformation</h3>
-                <ul className="space-y-2 text-yellow-400 text-sm">
-                  <li>• Business process optimization</li>
-                  <li>• Cloud migration strategies</li>
-                  <li>• Digital infrastructure setup</li>
-                  <li>• Change management consulting</li>
-                </ul>
-              </div>
-
-              <div className="bg-muted/50 p-6 rounded-lg border border-border">
-                <h3 className="text-xl font-bold text-yellow-400 mb-3">Training & Support</h3>
-                <ul className="space-y-2 text-yellow-400 text-sm">
-                  <li>• Technical staff training programs</li>
-                  <li>• 24/7 technical support</li>
-                  <li>• Knowledge transfer workshops</li>
-                  <li>• Ongoing maintenance services</li>
+              <div className="bg-muted/50 p-8 rounded-lg border border-border">
+                <h3 className="text-2xl font-bold text-yellow-400 mb-4">Training & Support</h3>
+                <ul className="space-y-3 text-yellow-400">
+                  <li>• Technical staff training programs and workshops</li>
+                  <li>• 24/7 technical support and maintenance</li>
+                  <li>• Knowledge transfer and documentation</li>
+                  <li>• Ongoing maintenance and optimization services</li>
                 </ul>
               </div>
             </div>
