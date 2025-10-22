@@ -255,6 +255,7 @@ export default function Home() {
         {/* Founder Section */}
         <section id="founder" className="py-20 bg-background">
           <div className="container mx-auto px-4 text-center">
+            <h2 className="text-4xl font-bold text-yellow-400 mb-12">Meet the Founder</h2>
             <div className="max-w-2xl mx-auto bg-muted/50 p-12 rounded-2xl border border-border shadow-xl">
               {/* Circular Photo */}
               <div className="mb-8 flex justify-center">
