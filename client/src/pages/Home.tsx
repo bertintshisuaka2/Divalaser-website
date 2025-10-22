@@ -261,9 +261,9 @@ export default function Home() {
             {/* Right Column */}
             <div className="flex flex-col">
               <div className="mb-6 p-6 bg-muted/50 rounded-lg border border-border">
-                <h3 className="text-xl font-bold text-yellow-400 mb-4">Column 2 Title</h3>
+                <h3 className="text-xl font-bold text-yellow-400 mb-4">Vision on Digitalization in Africa</h3>
                 <p className="text-yellow-400 leading-relaxed">
-                  Add your text content here for the second column. This section can showcase additional features, benefits, or case studies.
+                  President Felix Tshisekedi has unveiled the DRC Digital Nation 2030 initiative, a bold vision to transform the Democratic Republic of Congo into Africa's leading tech hub. The President declared: If we are gathered today, it is to affirm a clear and measured ambition: to make the Democratic Republic of Congo a prosperous digital nation and a technological hub at the heart of Africa by 2030. Digital transformation has been central to his development policy since 2019, with strategic pillars including infrastructure expansion across Congo's vast territory, digital services for education, health, and finance, and governance frameworks that create a business-friendly ecosystem. By leveraging Congo's wealth in rare and critical minerals essential to global digital and energy transitions, the DRC aims to become a driving force for inclusive and shared digital peace, creating millions of jobs and ensuring shared prosperity for the Congolese people.
                 </p>
               </div>
               <div className="flex-1 rounded-2xl overflow-hidden border border-border shadow-xl">
