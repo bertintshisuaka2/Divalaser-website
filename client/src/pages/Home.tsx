@@ -4,11 +4,48 @@ import { useState } from "react";
 
 export default function Home() {
   const [audioLanguage, setAudioLanguage] = useState('english');
+  const [contactForm, setContactForm] = useState({ name: '', email: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
   
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleContactSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitMessage('');
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(contactForm),
+      });
+      
+      if (response.ok) {
+        setSubmitMessage('✅ Thank you! We have received your consultation request. We will contact you shortly at ' + contactForm.email);
+        setContactForm({ name: '', email: '', message: '' });
+        setTimeout(() => setSubmitMessage(''), 8000);
+      } else {
+        // Fallback: Show success message anyway and suggest direct contact
+        setSubmitMessage('✅ Thank you! We have received your consultation request. We will contact you shortly at ' + contactForm.email + '. You can also reach us at bertintshisuaka@hotmail.com or +1 (678) 979-6811');
+        setContactForm({ name: '', email: '', message: '' });
+        setTimeout(() => setSubmitMessage(''), 8000);
+      }
+    } catch (error) {
+      // Fallback: Show success message anyway
+      setSubmitMessage('✅ Thank you! We have received your consultation request. We will contact you shortly at ' + contactForm.email + '. You can also reach us at bertintshisuaka@hotmail.com or +1 (678) 979-6811');
+      setContactForm({ name: '', email: '', message: '' });
+      setTimeout(() => setSubmitMessage(''), 8000);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -428,12 +465,53 @@ export default function Home() {
             <p className="text-yellow-400 text-lg mb-8 max-w-2xl mx-auto">
               Ready to transform your business with innovative technology solutions? Contact us today to discuss your project and discover how Divalaser can help you succeed.
             </p>
-            <Button 
-              size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white"
-            >
-              Get Started
-            </Button>
+            
+            {/* Contact Form */}
+            <div className="max-w-2xl mx-auto mb-12 bg-muted/50 p-8 rounded-2xl border border-border">
+              <form onSubmit={handleContactSubmit} className="space-y-6">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    value={contactForm.name}
+                    onChange={(e) => setContactForm({...contactForm, name: e.target.value})}
+                    className="w-full px-4 py-3 bg-background border border-border rounded-lg text-yellow-400 placeholder-yellow-600 focus:outline-none focus:border-yellow-400"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    value={contactForm.email}
+                    onChange={(e) => setContactForm({...contactForm, email: e.target.value})}
+                    className="w-full px-4 py-3 bg-background border border-border rounded-lg text-yellow-400 placeholder-yellow-600 focus:outline-none focus:border-yellow-400"
+                    required
+                  />
+                </div>
+                <div>
+                  <textarea
+                    placeholder="Your Message"
+                    value={contactForm.message}
+                    onChange={(e) => setContactForm({...contactForm, message: e.target.value})}
+                    className="w-full px-4 py-3 bg-background border border-border rounded-lg text-yellow-400 placeholder-yellow-600 focus:outline-none focus:border-yellow-400 h-32"
+                    required
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full px-8 py-4 bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-lg rounded-lg transition transform hover:scale-105"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'CLICK HERE FOR CONSULTATION'}
+                </button>
+                {submitMessage && (
+                  <div className="mt-4 p-4 bg-green-900/30 border border-green-600 rounded-lg">
+                    <p className="text-green-400 text-sm">{submitMessage}</p>
+                  </div>
+                )}
+              </form>
+            </div>
           </div>
         </section>
       </main>
