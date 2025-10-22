@@ -82,7 +82,7 @@ export default function Home() {
               <div className="flex flex-col h-full">
                 <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-6 flex-shrink-0">
                   <img 
-                    src="/digital-transformation.png" 
+                    src="/digital-transformation-new.png" 
                     alt="Digital Transformation" 
                     className="w-full h-64 object-cover"
                   />
@@ -103,7 +103,7 @@ export default function Home() {
               <div className="flex flex-col h-full">
                 <div className="rounded-2xl overflow-hidden border border-border shadow-xl mb-6 flex-shrink-0">
                   <img 
-                    src="/training-support.png" 
+                    src="/training-support-new.png" 
                     alt="Training and Support" 
                     className="w-full h-64 object-cover"
                   />
