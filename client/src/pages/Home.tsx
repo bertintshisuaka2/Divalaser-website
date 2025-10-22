@@ -246,9 +246,9 @@ export default function Home() {
             {/* Left Column */}
             <div className="flex flex-col">
               <div className="mb-6 p-6 bg-muted/50 rounded-lg border border-border">
-                <h3 className="text-xl font-bold text-yellow-400 mb-4">Column 1 Title</h3>
+                <h3 className="text-xl font-bold text-yellow-400 mb-4">World Bank's</h3>
                 <p className="text-yellow-400 leading-relaxed">
-                  Add your text content here for the first column. This section highlights key information about your services, expertise, or offerings.
+                  The World Bank views digitalization as a key driver of inclusive development in Africa. Through its initiative called Inclusive Digitalization in Eastern and Southern Africa (IDEA), it plans to invest approximately USD 2.48 billion to support 15 countries and regional economic communities. The goals include expanding access to high-speed internet, increasing the use of digital services, bridging the infrastructure gap (connectivity, devices), lowering data costs, developing digital skills, and strengthening digital ID platforms. The Bank is also spearheading the Mobilizing Access to the Digital Economy (MADE) Alliance: Africa, aiming to connect 100 million people and businesses by 2034, with a focus on public-private cooperation and regional digital market integration. In essence, the World Bank seeks to promote an African digital economy where every person, business, and government is empowered through technology. This requires not only infrastructure, but also regulatory frameworks, digital public services, and reduced digital divides.
                 </p>
               </div>
               <div className="flex-1 rounded-2xl overflow-hidden border border-border shadow-xl">
