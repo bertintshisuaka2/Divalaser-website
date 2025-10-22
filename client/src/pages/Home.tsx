@@ -253,28 +253,48 @@ export default function Home() {
         </section>
 
         {/* Founder Section */}
-        <section id="founder" className="py-20 bg-muted/30">
+        <section id="founder" className="py-20 bg-background">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold text-yellow-400 mb-12">Meet Our Founder</h2>
-            
-            <div className="max-w-md mx-auto bg-muted/50 p-8 rounded-lg border border-border">
-              <div className="mb-6 flex justify-center">
-                <img 
-                  src="/founder-photo.jpg" 
-                  alt="Bertin Tshisuaka" 
-                  className="w-40 h-40 rounded-full object-cover border-4 border-yellow-400"
-                />
+            <div className="max-w-2xl mx-auto bg-muted/50 p-12 rounded-2xl border border-border shadow-xl">
+              {/* Circular Photo */}
+              <div className="mb-8 flex justify-center">
+                <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg">
+                  <img 
+                    src="/founder-photo.jpg" 
+                    alt="Bertin Tshisuaka" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-yellow-400 mb-2">BERTIN TSHISUAKA</h3>
-              <p className="text-yellow-400 font-semibold mb-4">Software Engineer & Full Stack Web Developer</p>
               
-              <div className="space-y-3 text-yellow-400 text-sm">
-                <p>
-                  <span className="font-semibold">Email:</span> bertintshisuaka@hotmail.com
-                </p>
-                <p>
-                  <span className="font-semibold">Phone:</span> +1 (678) 979-6811
-                </p>
+              {/* Name */}
+              <h3 className="text-4xl font-bold text-yellow-400 mb-4">BERTIN TSHISUAKA</h3>
+              
+              {/* Titles */}
+              <div className="mb-6">
+                <p className="text-2xl font-semibold text-yellow-400 mb-2">Software Engineer</p>
+                <p className="text-2xl font-semibold text-yellow-400">Full Stack Web Developer</p>
+              </div>
+              
+              {/* Bio */}
+              <p className="text-yellow-400 text-lg leading-relaxed mb-8">
+                With extensive experience in software engineering and full-stack web development, Bertin Tshisuaka founded Divalaser Software Solutions to bridge the digital divide and empower African businesses through innovative technology solutions.
+              </p>
+              
+              {/* Contact Information */}
+              <div className="space-y-4 text-yellow-400 text-lg border-t border-yellow-400/30 pt-8">
+                <div className="flex items-center justify-center gap-3">
+                  <span>✉️</span>
+                  <a href="mailto:bertintshisuaka@hotmail.com" className="hover:text-yellow-300 transition">
+                    bertintshisuaka@hotmail.com
+                  </a>
+                </div>
+                <div className="flex items-center justify-center gap-3">
+                  <span>📞</span>
+                  <a href="tel:+16789796811" className="hover:text-yellow-300 transition">
+                    +1 (678) 979-6811
+                  </a>
+                </div>
               </div>
             </div>
           </div>
