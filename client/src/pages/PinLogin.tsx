@@ -47,13 +47,19 @@ export default function PinLogin({ onLoginSuccess }: PinLoginProps) {
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
           {/* Logo/Header */}
           <div className="text-center mb-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-400 rounded-full mb-4">
-              <Lock className="w-8 h-8 text-black" />
+            {/* Founder Photo */}
+            <div className="mb-6">
+              <img 
+                src="/bertin-photo.png" 
+                alt="Bertin Tshisuaka - Founder" 
+                className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-yellow-400 shadow-xl"
+              />
             </div>
             <h1 className="text-3xl font-bold text-yellow-400 mb-2">
               Divalaser Software Solutions
             </h1>
-            <p className="text-white/80">Enter your 4-digit PIN to access</p>
+            <p className="text-white/80 mb-1">Founded by Bertin Tshisuaka</p>
+            <p className="text-white/60 text-sm">Enter your 4-digit PIN to access</p>
           </div>
 
           {/* PIN Form */}
