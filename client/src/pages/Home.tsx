@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { APP_LOGO, APP_TITLE } from "@/const";
 import { useState } from "react";
+import { LogOut } from "lucide-react";
 
 export default function Home() {
   const [audioLanguage, setAudioLanguage] = useState('english');
@@ -58,11 +59,19 @@ export default function Home() {
             <span className="text-2xl font-bold text-blue-500">{"</>"}</span>
             <h1 className="text-2xl font-bold text-yellow-400">{APP_TITLE}</h1>
           </div>
-          <nav className="hidden md:flex gap-8">
+          <nav className="hidden md:flex gap-8 items-center">
             <button onClick={() => scrollToSection("services")} className="text-yellow-400 hover:text-yellow-300 transition">Services</button>
             <button onClick={() => scrollToSection("about")} className="text-yellow-400 hover:text-yellow-300 transition">About</button>
             <button onClick={() => scrollToSection("founder")} className="text-yellow-400 hover:text-yellow-300 transition">Founder</button>
             <button onClick={() => scrollToSection("contact")} className="text-yellow-400 hover:text-yellow-300 transition">Contact</button>
+            <button 
+              onClick={() => (window as any).divalaser_logout && (window as any).divalaser_logout()}
+              className="flex items-center gap-2 px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition"
+              title="Logout"
+            >
+              <LogOut className="w-4 h-4" />
+              Logout
+            </button>
           </nav>
         </div>
       </header>
