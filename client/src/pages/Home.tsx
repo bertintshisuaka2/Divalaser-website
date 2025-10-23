@@ -356,16 +356,7 @@ export default function Home() {
                   >
                     Francais
                   </button>
-                  <button
-                    onClick={() => setAudioLanguage('lingala')}
-                    className={`px-6 py-2 rounded-lg font-semibold transition ${
-                      audioLanguage === 'lingala'
-                        ? 'bg-yellow-400 text-black'
-                        : 'border border-yellow-400 text-yellow-400 hover:bg-yellow-400/10'
-                    }`}
-                  >
-                    Lingala
-                  </button>
+
                 </div>
 
                 {audioLanguage === 'english' && (
@@ -400,21 +391,7 @@ export default function Home() {
                   </div>
                 )}
 
-                {audioLanguage === 'lingala' && (
-                  <div>
-                    <p className="text-yellow-400 text-sm italic mb-4">Lingala na Molinga</p>
-                    <audio 
-                      controls 
-                      className="w-full rounded-lg"
-                      style={{
-                        accentColor: '#FACC15'
-                      }}
-                    >
-                      <source src="/founder-speech-lingala.wav" type="audio/wav" />
-                      Your browser does not support the audio element.
-                    </audio>
-                  </div>
-                )}
+
               </div>
               
               {/* Contact Information */}
